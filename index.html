@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>calculadora</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <h1>Calculo intereses</h1>
-    <label for="capital">Capital Inicial:</label>
+    <header id="cabeza">
+        <h1>Calculo intereses</h1>
+    </header>
+    <label for="capital" id="label1">Capital Inicial:</label>
     <input type="number" id="capital" name="capital">
-
+    <br>
     <label for="porcentaje">Porcentaje de Interés Anual:</label>
     <input type="number" id="porcentaje" name="porcentaje" step="0.01">
-
-    <label for="dias">Días:</label>
+    <br>
+    <label for="dias" id="labeldia">Días:</label>
     <input type="number" id="dias" name="dias">
-
+    <br>
     <button onclick="calcularInteres()">Calcular</button>
 
     <p id="resultado"></p>
 
     <!-- para averiguar realmente cuanto intereses recibes-->
     <h2>funcion para calcula cuanto es la tasa a partir de intereses obtenidos en un dia</h2>
-    <label for="actual">monto actual:</label>
+    <label for="actual" id="label1">monto actual:</label>
     <input type="number" id="monto" name="monto">
-
+    <br>
     <label for="rendimiento">rendimiento obtenido hoy</label>
     <input type="number" id="rend" name="rend">
-
+    <br>
     <button onclick="calculoInteres()">Calcular</button>
 
     <p id="inter"></p>
