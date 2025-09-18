@@ -50,7 +50,8 @@ input{
 
 body{
     background-image: url('Untitled1_20250918013504.jpg');
-    background-size:100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
+
