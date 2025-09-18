@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculo intereses</h1>
+    <label for="capital">Capital Inicial:</label>
+    <input type="number" id="capital" name="capital">
+
+    <label for="porcentaje">Porcentaje de Interés Anual:</label>
+    <input type="number" id="porcentaje" name="porcentaje" step="0.01">
+
+    <label for="dias">Días:</label>
+    <input type="number" id="dias" name="dias">
+
+    <button onclick="calcularInteres()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <!-- para averiguar realmente cuanto intereses recibes-->
+    <h2>funcion para calcula cuanto es la tasa a partir de intereses obtenidos en un dia</h2>
+    <label for="actual">monto actual:</label>
+    <input type="number" id="monto" name="monto">
+
+    <label for="rendimiento">rendimiento obtenido hoy</label>
+    <input type="number" id="rend" name="rend">
+
+    <button onclick="calculoInteres()">Calcular</button>
+
+    <p id="inter"></p>
+
+    <script src="intereses.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
